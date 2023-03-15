@@ -1,11 +1,12 @@
-public class AppendixAandB{
+public class AppendixA {
   public static void main(String[] args){
 
     //findnumbers(1000);
     //System.out.println(palindrome());
     //largestproduct();
     //pythagorean();
-    smallestmultiple(20);
+    //smallestmultiple(20);
+    powerdigitsum();
   }
   //All dividable by 3 or 5-------------------------------------------------------------------
   public static void findnumbers(int max){
@@ -111,5 +112,19 @@ public class AppendixAandB{
     x--;
     System.out.println(x);
     return;
+  };
+  //Power Digit Sum--------------------------------------------------------------------------
+  public static void powerdigitsum(){ //todo: fix overflowing variable
+    long x = 1;
+    for (int i = 1; i <= 100 ; i++) {
+      x *= 2;
+      System.out.println(x);
+    }
+    System.out.println(x);
+    int sum = squaresum((int)x);
+    System.out.println(sum);
+  }
+  public static int squaresum(int in){
+    return in < 10 ? in : in%10 + squaresum(in/10);
   }
 }
