@@ -34,7 +34,7 @@ public class AppendixD {
       if(valueIn){
         value = value | bit;
       }else{
-        value = value & ~bit;
+        value = value & ~(int)(Math.pow(2, (bit - 1)));
       }
     }
   }

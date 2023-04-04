@@ -2,7 +2,7 @@ public class AppendixA {
   public static void main(String[] args) {
 
     //findnumbers(1000);
-    System.out.println(palindrome());
+    //System.out.println(palindrome());
     //largestproduct();
     //pythagorean();
     //smallestmultiple(20);
