@@ -10,6 +10,7 @@ public class AppendixA {
   }
 
   //All dividable by 3 or 5-------------------------------------------------------------------
+
   public static void findnumbers(int max) {
     int sum = 0;
     int currentnumbers = 0;
